@@ -11,16 +11,33 @@
   <div class="container">
     <h1>🌤️ AeroWeather</h1>
 
-    <input type="text" id="search" placeholder="Enter city name" />
-    <button onclick="getWeather()">Search</button>
+    <input id="searchBox" placeholder="Enter city">
+    <button id="addBtn">Add City</button>
+
+    <br><br>
+
+    
+    <input id="searchFilter" placeholder="Search in list">
+
+    
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="hot">Hot (>25°C)</option>
+      <option value="cold">Cold (<20°C)</option>
+    </select>
+
+    <select id="sort">
+      <option value="">Sort</option>
+      <option value="asc">Temp Low-High</option>
+      <option value="desc">Temp High-Low</option>
+      <option value="name">Name A-Z</option>
+    </select>
+
+    <button id="modeBtn">🌙 Mode</button>
 
     <p id="loading" class="load">Loading...</p>
 
-    <div id="weather">
-      <h2 id="city"></h2>
-      <p id="temp"></p>
-      <p id="desc"></p>
-    </div>
+    <div id="list"></div>
   </div>
 
   <script src="script.js"></script>

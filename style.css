@@ -6,6 +6,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  color: black;
 }
 
 .container {
@@ -28,10 +29,35 @@ button {
   cursor: pointer;
 }
 
-.load {
+select {
+  padding: 10px;
+  margin: 10px 5px;
+}
+
+.box {
+  border: 1px solid gray;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.hide {
   display: none;
 }
 
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark .container {
+  background: #1e1e1e;
+}
+
+.dark .box {
+  background: #2c2c2c;
+  border-color: #555;
+}
 
 @media (min-width: 768px) {
   .container {
